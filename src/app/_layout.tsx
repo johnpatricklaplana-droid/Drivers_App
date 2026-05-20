@@ -8,11 +8,10 @@ export default function RootLayout() {
     StatusBar.setTranslucent(false);
 
     return (
-        <SafeAreaProvider>
-            <Stack>
-                <Stack.Screen name="tabs" options={{ headerShown: false }} />
-                <Stack.Screen options={{ title: 'order details', headerStyle: { backgroundColor: "#4f46e5" }, headerTintColor: '#fff' }} name="orderDetails" />
-            </Stack>
-        </SafeAreaProvider>
+        <Stack>
+            <Stack.Screen name="tabs" options={{ headerShown: false }} />
+            <Stack.Screen options={{ title: 'order details', headerStyle: { backgroundColor: "#4f46e5" }, headerTintColor: '#fff' }} name="orderDetails" />
+            <Stack.Screen options={{ title: 'complete order', headerStyle: { backgroundColor: "#4f46e5" }, headerTintColor: '#fff' }} name="completeOrder" />
+        </Stack>
     );
 }

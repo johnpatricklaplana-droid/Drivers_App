@@ -10,11 +10,11 @@ export default function Orders () {
 
     const orders = [
         {id: "PH-GE-JP", product: 'good one', time: '12:00pm'},
-        {id: "PH-GE-JP", product: "bad one", time: '10:50am'},
-        {id: "PH-GE-JP", product: 'semibad', time: '3:00pm'},
-        {id: "PH-GE-JP", product: 'semigood', time: '2:05pm'},
-        {id: "PH-GE-JP", product: 'not bad', time: 'timecheck'},
-        {id: "PH-GE-JP", product: "not good", time: 'hehe'},
+        {id: "PH-GE-J", product: "bad one", time: '10:50am'},
+        {id: "PH-GE-P", product: 'semibad', time: '3:00pm'},
+        {id: "PH-GE-", product: 'semigood', time: '2:05pm'},
+        {id: "PH-GEJP", product: 'not bad', time: 'timecheck'},
+        {id: "PHGE-JP", product: "not good", time: 'hehe'},
     ]
 
     const [active, setActive] = useState("new");
