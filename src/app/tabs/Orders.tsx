@@ -4,6 +4,7 @@ import NavBar from './navBar';
 import { useState } from 'react';
 import { Shadow } from 'react-native-shadow-2';
 import { Ionicons } from '@expo/vector-icons'; 
+import { router } from 'expo-router';
 
 export default function Orders () {
 
@@ -46,7 +47,10 @@ export default function Orders () {
                 keyExtractor={(item) => item.id}
                 renderItem={({item}) => (
                     <Shadow distance={3} style={{ width: '100%' }}>
-                        <View style={{ padding: 16, borderRadius: 16, backgroundColor: 'white' }}>
+                        <Pressable 
+                            style={{ padding: 16, borderRadius: 16, backgroundColor: 'white' }}
+                            onPress={() => router.push('/orderDetails')}
+                        >
                             <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 8 }}>
                                 <Text style={styles.product}>{item.product}</Text>
                                 <Text style={styles.time}>{item.time}</Text>
@@ -63,7 +67,7 @@ export default function Orders () {
                                 <Text style={[styles.price]}>$13,000</Text>
                                 <Text style={{ width: '100%', textAlign: 'right' }}>Cash on delivery</Text>
                             </View>
-                        </View>
+                        </Pressable>
                     </Shadow>
                 )}
             >

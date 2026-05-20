@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         padding: 24,
         flexDirection: 'column',
         justifyContent: 'space-between',
-        backgroundColor: '#1c398e',
+        backgroundColor: '#4f46e5',
         gap: 24
     },
     navBarTopOne: {

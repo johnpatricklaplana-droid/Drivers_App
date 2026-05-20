@@ -2,7 +2,6 @@ import * as Device from 'expo-device';
 import { Platform, Pressable, StyleSheet, Text, View, FlatList } from 'react-native';
 import { ThemedText } from '@/components/themed-text';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import NavBar from './navBar';
 
 function getDevMenuHint() {
@@ -25,8 +24,6 @@ function getDevMenuHint() {
 }
 
 export default function HomeScreen() {
-
-  const Tab = createBottomTabNavigator();
 
   const data = [
     { id: '1', title: 'Orders', number: 4 },
