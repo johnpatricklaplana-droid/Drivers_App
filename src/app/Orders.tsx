@@ -28,7 +28,7 @@ export default function Orders () {
         <SafeAreaView edges={['top']} style={{ flex: 1 }}>
             <NavBar pageName='Orders' />
             <Shadow distance={3} startColor="#00000010">
-                <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
+                <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%', backgroundColor: 'white' }}>
                     {filters.map(t => {
                         let style = { width: 100, paddingHorizontal: 8, paddingVertical: 16 };
                         if (t.id === active) {
@@ -46,7 +46,7 @@ export default function Orders () {
                 keyExtractor={(item) => item.id}
                 renderItem={({item}) => (
                     <Shadow distance={3} style={{ width: '100%' }}>
-                        <View style={{ padding: 16, borderRadius: 16 }}>
+                        <View style={{ padding: 16, borderRadius: 16, backgroundColor: 'white' }}>
                             <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 8 }}>
                                 <Text style={styles.product}>{item.product}</Text>
                                 <Text style={styles.time}>{item.time}</Text>
